@@ -1,4 +1,7 @@
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports = {
+  root: true,
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -25,18 +28,18 @@ module.exports = {
     es6: true,
   },
   rules: {
-    "no-console": "error",
+    "no-console": isProd ? "error" : "off",
     "array-callback-return": "error",
     "eqeqeq": "error",
     "no-bitwise": "error",
     "no-caller": "error",
     "no-unused-expressions": "error",
     "prettier/prettier": "error",
-    "react/prop-types": "off",
     "react/jsx-key": "error",
+    "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "off",
+    "react-hooks/exhaustive-deps": "warn",
   },
   overrides: [
     {
