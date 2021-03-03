@@ -4,13 +4,13 @@ ESLint and Prettier rulesets
 
 ## Install
 
-### Installation using package-lock
+### Installation for development
 
 ```bash
 npm ci
 ```
 
-### Install individual packages
+### Installation for individual projects
 
 ```bash
 npm i -D typescript prettier eslint eslint-config-prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks @typescript-eslint/eslint-plugin @typescript-eslint/parser
@@ -32,9 +32,9 @@ Notes about ESLint
 
 Notes about Prettier
 
-## Samples
+## Sample Project
 
-Standard create react-app include typescript
+Standard created react-app with typescript
 
 ```bash
 npm ci
