@@ -1,22 +1,13 @@
-const isProd = process.env.NODE_ENV === "production";
-
 module.exports = {
-  root: true,
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
-  ],
-  plugins: ["react", "react-hooks", "prettier"],
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
+  plugins: ["json-format", "prettier"],
   parserOptions: {
     ecmaVersion: 9,
     sourceType: "module",
-    jsx: true,
   },
   settings: {
-    react: {
-      version: "17.0",
-    },
+    "json/sort-package-json": false,
+    "json/json-with-comments-files": ["tsconfig.json", ".vscode/**"],
   },
   globals: {
     window: true,
@@ -28,18 +19,13 @@ module.exports = {
     es6: true,
   },
   rules: {
-    "no-console": isProd ? "error" : "off",
+    "no-console": "error",
     "array-callback-return": "error",
     "eqeqeq": "error",
     "no-bitwise": "error",
     "no-caller": "error",
     "no-unused-expressions": "error",
     "prettier/prettier": "error",
-    "react/jsx-key": "error",
-    "react/react-in-jsx-scope": "off",
-    "react/no-unescaped-entities": "error",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
   },
   overrides: [
     {
@@ -53,9 +39,17 @@ module.exports = {
       rules: {
         "no-var": "off",
         "prefer-const": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/no-explicit-any": "off",
       },
     },
+  ],
+  ignorePatterns: [
+    "!/.eslintrc.js",
+    "!/.prettierrc.js",
+    ".cache",
+    ".next",
+    "node_modules",
+    "out",
+    "package-lock.json",
+    "public",
   ],
 };

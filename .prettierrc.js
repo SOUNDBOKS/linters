@@ -1,3 +1,1 @@
-module.exports = {
-  quoteProps: "consistent",
-};
+module.exports = require("./packages/prettier-config");
