@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["plugin:react/recommended"],
+  extends: ["plugin:react/recommended", "@soundboks/eslint-config"],
   plugins: ["react", "react-hooks"],
   parserOptions: {
     jsx: true,

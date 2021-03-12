@@ -1,6 +1,6 @@
 {
   "name": "@soundboks/eslint-config-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ESLint configuration used by Soundboks",
   "license": "MIT license",
   "repository": {
