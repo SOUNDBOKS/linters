@@ -1,11 +1,11 @@
 {
-  "name": "@soundboks/prettier-config-vercell",
+  "name": "@soundboks/prettier-config",
   "version": "0.0.1",
   "description": "Prettier configuration used by Soundboks",
   "license": "MIT license",
   "repository": {
     "type": "git",
-    "url": "https://github.com/soundboks/vercell-linters.git",
+    "url": "https://github.com/soundboks/linters.git",
     "directory": "packages/prettier-config"
   },
   "files": [
