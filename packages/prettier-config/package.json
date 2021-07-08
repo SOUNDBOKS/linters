@@ -1,6 +1,6 @@
 {
   "name": "@soundboks/prettier-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Prettier configuration used by Soundboks",
   "license": "MIT license",
   "repository": {
@@ -13,5 +13,8 @@
   ],
   "engines": {
     "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "prettier": "^2.3.2"
   }
 }
