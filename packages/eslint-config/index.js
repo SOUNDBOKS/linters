@@ -1,13 +1,9 @@
 module.exports = {
   extends: ["eslint:recommended", "plugin:prettier/recommended"],
-  plugins: ["json-format", "prettier"],
+  plugins: ["prettier"],
   parserOptions: {
     ecmaVersion: 9,
     sourceType: "module",
-  },
-  settings: {
-    "json/sort-package-json": false,
-    "json/json-with-comments-files": ["tsconfig.json", ".vscode/**"],
   },
   globals: {
     window: true,
